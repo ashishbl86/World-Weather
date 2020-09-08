@@ -109,6 +109,7 @@
 				FF8AD4EC2505C5390053C65D /* View Models */,
 				FF8AD4ED2505C5580053C65D /* Models */,
 				FF8AD4EE2505C56E0053C65D /* Network Services */,
+				FF8AD4F12507191B0053C65D /* DataFiles */,
 				FF9F960425047F4200E526D6 /* Supporting files */,
 			);
 			path = "World Weather";
@@ -122,7 +123,6 @@
 				FF9F95F825047E5100E526D6 /* Assets.xcassets */,
 				FF9F95FA25047E5100E526D6 /* LaunchScreen.storyboard */,
 				FF9F95FD25047E5100E526D6 /* Info.plist */,
-				FF8AD4F12507191B0053C65D /* DataFiles */,
 			);
 			name = "Supporting files";
 			sourceTree = "<group>";
