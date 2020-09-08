@@ -11,7 +11,6 @@ import UIKit
 class WeatherViewController: UIViewController, UITextFieldDelegate {
     
     private var weatherViewModel: WeatherViewModel!
-    private let bangaloreLocation = Location(latitude: 12.98, longitude: 77.6)
     private var searchTextDecoratorHeightConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var locationLabel: UILabel!
@@ -59,9 +58,6 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
     
     private func setup() {
         weatherViewModel = WeatherViewModel(weatherService: WeatherService.shared)
-        NotificationCenter.default.addObserver(forName: UITextField.textDidChangeNotification, object: citySearchField, queue: nil) { _ in
-            self.weatherViewModel.filterCities(withNamePrefix: self.citySearchField.text!)
-        }
     }
 
     private func bindViewsToViewModel() {
@@ -183,6 +179,9 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
         decorateCityInputTextField()
         configureKeyboardToolbar()
         createLabelViewsForSearchResult()
+        NotificationCenter.default.addObserver(forName: UITextField.textDidChangeNotification, object: citySearchField, queue: nil) { _ in
+            self.weatherViewModel.filterCities(withNamePrefix: self.citySearchField.text!)
+        }
     }
 }
 
