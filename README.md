@@ -1,7 +1,7 @@
 #  World Weather
 World Weather is a relatively simple iOS app that allows you to check the current weather for any city in the world.
 
-## How to use
+## How To Use
 In the search bar, start to type the city name for which you want to see the weather. As you type, you will get city names below the search bar. Tap the city name you want to see the weather for and it will show on the screen.
 
 ## General Info
