@@ -13,6 +13,7 @@ From openweathermap.org, a JSON file is also available which has names of all th
 
 ### Automated Testing
 One of the main advantages of MVVM is improved testability.
+
 So also included in this project are unit tests of the weather view model. To testing binding of views to viewModel, the test cases use  `XCTestExpectation` to test async calls.
 
 ## Screenshots
