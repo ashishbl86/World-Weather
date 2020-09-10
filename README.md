@@ -11,7 +11,9 @@ Weather data is pulled from free Web APIs from [openweathermap.org](http://openw
 
 From openweathermap.org, a JSON file is also available which has names of all the cities for which the weather data is available from their API. This app uses that JSON to provide the cities names.
 
-One of the main advantages of MVVM is improved testability. Would be adding Xcode unit tests shortly.
+### Automated Testing
+One of the main advantages of MVVM is improved testability.
+So also included in this project are unit tests of the weather view model. To testing binding of views to viewModel, the test cases use  `XCTestExpectation` to test async calls.
 
 ## Screenshots
 Weather|City name suggestions|Weather

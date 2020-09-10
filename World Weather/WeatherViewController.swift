@@ -57,7 +57,7 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func setup() {
-        weatherViewModel = WeatherViewModel(weatherService: WeatherService.shared)
+        weatherViewModel = WeatherViewModel(weather: Weather(weatherService: OpenWeatherOrgService.shared))
     }
 
     private func bindViewsToViewModel() {

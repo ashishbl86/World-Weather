@@ -44,8 +44,8 @@ class WeatherViewModel {
     let icon = Box<UIImage>()
     let citySearchResult = Box<[String]>()
     
-    init(weatherService: WeatherService) {
-        self.weather = Weather(weatherService: weatherService)
+    init(weather: Weather) {
+        self.weather = weather
     }
     
     func filterCities(withNamePrefix namePrefix: String) {
